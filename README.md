@@ -1,5 +1,8 @@
 # TinyBirds
-Code repository for Orkney and Hedrick 2024
+Code repository for Orkney and Hedrick 2024, run in R version 4.2.3 
+Machine specs: 12th Gen Intel(R) Core(TM) i9-12900K   3.20 GHz
+128 GB (128 GB usable)
+64-bit operating system, x64-based processor
 
 This repository contains commented codes to enable readers to reproduce the analyses conducted in Orkney and Hedrick, 2024. 
 
@@ -15,13 +18,15 @@ Thereafter, the initial script 'loader.R' must be run to produce interrogable da
 
 Fig_var_stru_01_12_2024.R
 >> Figure 1
+(This script will run in under 5 minutes)
 
 Salami_slicer_01_11_2024.R
 >> Figure 2 and 3
-(this script is more computationally intensive and it may take some time to run)
+(This script is more computationally intensive and it may take about an hour to complete; the user is advised to take advantage of the data-saving option to minimise time spent re-running this script)
 
 Dm_plots_01_11_2024.R
 >> Figure 4
+(This script should take less than 15 minutes to run)
 
 Description of analysis: 
 The scripts here interrogate a dataset of skeletal proportions/ bone sizes across a broad sample of 228 extant bird species, 
