@@ -338,10 +338,10 @@ for(i in 1: length(inc) ){ # For all unique mean body mass values
 		 boot[[j]]<-sample(size.int[ind,within.head],replace=T) # Sample integration with replacement
 	}
 	boot<-unlist(boot)
-	mean.size.int[i,3]<-quantile(boot,probs=0.32) # Use the quantiles to extract probability intervals at 1 and 2 standard deviations
-	mean.size.int[i,4]<-quantile(boot,probs=0.68)
-	mean.size.int[i,5]<-quantile(boot,probs=0.05)
-	mean.size.int[i,6]<-quantile(boot,probs=0.95)
+	mean.size.int[i,3]<-quantile(boot,probs=0.159) # Use the quantiles to extract probability intervals at 1 and 2 standard deviations
+	mean.size.int[i,4]<-quantile(boot,probs=0.84)
+	mean.size.int[i,5]<-quantile(boot,probs=0.025)
+	mean.size.int[i,6]<-quantile(boot,probs=0.975)
 	# Comments will not be repeated unnecessarily
 
 	# Repeat process for within-wing integration:
@@ -352,10 +352,10 @@ for(i in 1: length(inc) ){ # For all unique mean body mass values
 		 boot[[j]]<-sample(rowMeans(size.int[ind,within.wing]),replace=T)
 	}
 	boot<-unlist(boot)
-	mean.size.int[i,8]<-quantile(boot,probs=0.32)
-	mean.size.int[i,9]<-quantile(boot,probs=0.68)
-	mean.size.int[i,10]<-quantile(boot,probs=0.05)
-	mean.size.int[i,11]<-quantile(boot,probs=0.95)
+	mean.size.int[i,8]<-quantile(boot,probs=0.159)
+	mean.size.int[i,9]<-quantile(boot,probs=0.84)
+	mean.size.int[i,10]<-quantile(boot,probs=0.025)
+	mean.size.int[i,11]<-quantile(boot,probs=0.975)
 
 	# Repeat process for within-trunk integration:
 	mean.size.int[i,12]<-mean( rowMeans( size.int[ind,within.trunk] ))
@@ -365,10 +365,10 @@ for(i in 1: length(inc) ){ # For all unique mean body mass values
 		 boot[[j]]<-sample(rowMeans(size.int[ind,within.trunk]),replace=T)
 	}
 	boot<-unlist(boot)
-	mean.size.int[i,13]<-quantile(boot,probs=0.32)
-	mean.size.int[i,14]<-quantile(boot,probs=0.68)
-	mean.size.int[i,15]<-quantile(boot,probs=0.05)
-	mean.size.int[i,16]<-quantile(boot,probs=0.95)
+	mean.size.int[i,13]<-quantile(boot,probs=0.159)
+	mean.size.int[i,14]<-quantile(boot,probs=0.84)
+	mean.size.int[i,15]<-quantile(boot,probs=0.025)
+	mean.size.int[i,16]<-quantile(boot,probs=0.975)
 
 	# Repeat process for within-leg integration:
 	mean.size.int[i,17]<-mean( rowMeans( size.int[ind,within.leg] ))
@@ -378,10 +378,10 @@ for(i in 1: length(inc) ){ # For all unique mean body mass values
 		 boot[[j]]<-sample( rowMeans(size.int[ind,within.leg]),replace=T)
 	}
 	boot<-unlist(boot)
-	mean.size.int[i,18]<-quantile(boot,probs=0.32)
-	mean.size.int[i,19]<-quantile(boot,probs=0.68)
-	mean.size.int[i,20]<-quantile(boot,probs=0.05)
-	mean.size.int[i,21]<-quantile(boot,probs=0.95)
+	mean.size.int[i,18]<-quantile(boot,probs=0.159)
+	mean.size.int[i,19]<-quantile(boot,probs=0.84)
+	mean.size.int[i,20]<-quantile(boot,probs=0.025)
+	mean.size.int[i,21]<-quantile(boot,probs=0.975)
 
 } # Loop concludes
 # The output matrix has now been populated with mean within-module integration statistics, 
