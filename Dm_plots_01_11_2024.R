@@ -485,10 +485,10 @@ library(caTools) # 1.18.2
 # A running window of k=30 is applied to comptue quantiles 
 ribbons <- as.data.frame(cbind( rep(0,length(masses)),
 log10(masses)[order(masses)],
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.95, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.68, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.32, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.05, endrule='quantile')
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.975, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.84, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.159, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.025, endrule='quantile')
 ))
 # Done 
 
@@ -633,10 +633,10 @@ model <- lm(output[[2]] ~log10(masses) )
 # Compute 1 and 2 sigma confidence intervals for the data distribution
 ribbons <- as.data.frame(cbind( rep(0,length(masses)),
 log10(masses)[order(masses)],
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.95, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.68, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.32, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.05, endrule='quantile')
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.975, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.84, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.159, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.025, endrule='quantile')
 ))
 # Done 
 
@@ -772,10 +772,10 @@ model <- lm(output[[2]] ~log10(masses) )
 # Compute 1 and 2 sigma confidence intervals for the data distribution
 ribbons <- as.data.frame(cbind( rep(0,length(masses)),
 log10(masses)[order(masses)],
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.95, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.68, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.32, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.05, endrule='quantile')
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.975, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.84, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.159, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.025, endrule='quantile')
 ))
 # Done 
 
@@ -911,10 +911,10 @@ model <- lm(output[[2]] ~log10(masses) )
 # Compute 1 and 2 sigma confidence intervals for the data distribution
 ribbons <- as.data.frame(cbind( rep(0,length(masses)),
 log10(masses)[order(masses)],
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.95, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.68, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.32, endrule='quantile'),
-runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.05, endrule='quantile')
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.975, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.84, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.159, endrule='quantile'),
+runquantile( x=(output[[2]])[order(masses)], k=30, probs= 0.025, endrule='quantile')
 ))
 # Done 
 
