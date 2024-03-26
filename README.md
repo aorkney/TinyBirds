@@ -1,4 +1,7 @@
 # TinyBirds
+
+[![DOI](https://zenodo.org/badge/749801166.svg)](https://zenodo.org/doi/10.5281/zenodo.10879690)
+
 Code repository for Orkney and Hedrick 2024, run in R version 4.2.3 
 This repository contains commented codes to enable readers to reproduce the analyses conducted in Orkney and Hedrick, 2024. 
 
